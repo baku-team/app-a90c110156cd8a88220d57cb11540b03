@@ -29,7 +29,7 @@
   // KVは単一（LICENSE）に集約：複数KVの自動命名が衝突（already exists）するのを避けるため。
   //   ファイルは LICENSE に "f/" prefix で保存（storage.ts の mediaKv フォールバック）。
   //   Astro session は未使用のため SESSION KV も不要（コードは独自HMACセッション）。
-  "d1_databases": [{ "binding": "DB", "migrations_dir": "migrations" }],
+  "d1_databases": [{ "binding": "DB", "database_name": "baku-office-db-a90c1101", "migrations_dir": "migrations" }],
   "kv_namespaces": [
     { "binding": "LICENSE" }
   ],
